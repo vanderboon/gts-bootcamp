@@ -1,7 +1,4 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
-
-ZSH_THEME=powerlevel10k/powerlevel10k
 
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
@@ -19,8 +16,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/.p10k.zsh
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -36,3 +31,5 @@ alias ls="ls -lash"
 autoload -U compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 
+#Init starship
+eval "$(starship init zsh)"
