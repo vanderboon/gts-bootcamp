@@ -26,5 +26,5 @@ mv terraform ~/bin && chmod 0755 ~/bin/terraform
 # Copy standard zsh & powerline configs
 cp ~/gts-bootcamp/shell_setup/.zshrc ~/.zshrc
 
-#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting &&
-#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# Start zsh
+zsh
