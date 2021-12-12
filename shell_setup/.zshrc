@@ -15,7 +15,7 @@ plugins=(
     history
     terraform
     zsh-autosuggestions
-    fast-syntax-highlighting
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
