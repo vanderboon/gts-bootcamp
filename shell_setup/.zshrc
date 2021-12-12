@@ -23,7 +23,6 @@ export LANG=en_US.UTF-8
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-source $HOME/.zsh/zsh-syntax-highlighting/zsh-autosuggestions.zsh
 
 alias ls="ls -lash"
 
