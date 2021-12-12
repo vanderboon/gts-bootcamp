@@ -4,10 +4,10 @@ echo 'bash -c zsh' >> $HOME/.bashrc
 
 # Install Oh-My-Zsh & plugins
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -- --unattended
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Install starship
 mkdir $HOME/bin
+export PATH=$HOME/bin;$PATH
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --yes --bin-dir $HOME/bin 
 
 # Install fonts

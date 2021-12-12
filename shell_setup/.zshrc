@@ -4,7 +4,7 @@ ZSH="/home/harshith/.oh-my-zsh"
 ZSH_THEME=""
 
 #Plugins
-plugins=(git zsh-autosuggestions)
+plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 #Star Ship
