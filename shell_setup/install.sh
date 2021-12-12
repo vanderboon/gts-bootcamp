@@ -7,7 +7,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 # Install starship
 mkdir $HOME/bin
-export PATH=$HOME/bin;$PATH
+export PATH="$HOME/bin:$PATH"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --yes --bin-dir $HOME/bin 
 
 # Install fonts
