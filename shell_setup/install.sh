@@ -1,18 +1,19 @@
 
 # Start zsh on startup. No chsh :(
-[[ $AWS_EXECUTION_ENV  == "CloudShell" ]] && echo "In CloudShell, no need to install git/zsh" || sudo yum -y install git zsh
-echo 'bash -c zsh' >> ~/.bashrc 
-
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended 
+echo 'bash -c zsh' >> $HOME/.bashrc
 
 # Install fonts
-git clone --depth=1 https://github.com/powerline/fonts.git
-./fonts/install.sh
+curl -fsSLO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Mononoki.zip
+unzip Mononoki.zip -d ~/.fonts
+rm -f Mononoki.zip
+sudo yum -y install fontconfig
+fc-cache -f
 rm -rf fonts
 
-# Install powelevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# Install starship
+mkdir $HOME/bin
+sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --yes --bin-dir $HOME/bin
+eval "$(starship init zsh)"
 
 # Add zsh-plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
