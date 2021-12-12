@@ -1,4 +1,4 @@
-ZSH="/home/harshith/.oh-my-zsh"
+ZSH="/home/cloudshell-user/.oh-my-zsh"
 
 #Theme
 ZSH_THEME=""
