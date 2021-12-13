@@ -26,5 +26,8 @@ source $ZSH/oh-my-zsh.sh
 eval "$(starship init zsh)"
 
 #Whoami
+echo "*** Your AWS identity is..."
 aws sts get-caller-identity
-git config --global --list
+echo
+echo "*** Your GIT identity is..."
+git config --global --list | grep user. --color=never
