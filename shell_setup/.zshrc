@@ -14,6 +14,7 @@ alias tfa="terraform apply tf.plan"
 alias tfd="terraform destroy"
 alias tff="terraform fmt"
 alias tfv="terraform validate"
+alias reload="source ~/.zshrc"
 
 #Theme
 ZSH_THEME=""
