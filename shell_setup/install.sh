@@ -11,9 +11,9 @@ export PATH="$HOME/bin:$PATH"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --yes --bin-dir $HOME/bin 
 
 # Install fonts
-curl -fsSLO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Mononoki.zip
-unzip Mononoki.zip -d ~/.fonts
-rm -f Mononoki.zip
+curl -fsSLO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
+unzip Meslo.zip -d ~/.fonts
+rm -f Meslo.zip
 sudo yum -y install fontconfig
 fc-cache -f
 

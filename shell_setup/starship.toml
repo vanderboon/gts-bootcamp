@@ -1,5 +1,5 @@
 [aws]
-format = "on aws [$region]($style) "
+format = "on [$symbol$region]($style) "
 style = "yellow"
 
 [git_branch]
