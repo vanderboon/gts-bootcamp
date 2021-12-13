@@ -24,3 +24,7 @@ source $ZSH/oh-my-zsh.sh
 
 #Star Ship
 eval "$(starship init zsh)"
+
+#Whoami
+aws sts get-caller-identity
+git config --global --list
