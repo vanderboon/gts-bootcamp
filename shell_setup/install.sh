@@ -33,6 +33,7 @@ GITMAIL=$(aws sts get-caller-identity | jq -r '.Arn | split("/")[2]')
 GITUSER=$(aws sts get-caller-identity | jq -r '.Arn | split("/")[2] | split("@")[0]')
 git config --global user.email $GITMAIL
 git config --global user.name  $GITUSER
+git config --global core.pager ""
 
 # Start zsh
 clear
