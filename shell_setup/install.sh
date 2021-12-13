@@ -29,4 +29,5 @@ mkdir $HOME/.config
 cp $HOME/gts-bootcamp/shell_setup/starship.toml $HOME/.config/starship.toml
 
 # Start zsh
+clear
 zsh
