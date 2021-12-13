@@ -1,5 +1,9 @@
 ZSH="/home/cloudshell-user/.oh-my-zsh"
 
+#Envvars
+export PATH="$HOME/bin:$PATH"
+export AWS_PAGER=""
+
 #Aliases
 alias ls="ls -lha"
 alias tf="terraform"

@@ -28,6 +28,12 @@ cp $HOME/gts-bootcamp/shell_setup/.zshrc $HOME/.zshrc
 mkdir $HOME/.config
 cp $HOME/gts-bootcamp/shell_setup/starship.toml $HOME/.config/starship.toml
 
+# configure git
+GITMAIL=$(aws sts get-caller-identity | jq -r '.Arn | split("/")[2]')
+GITUSER=$(aws sts get-caller-identity | jq -r '.Arn | split("/")[2] | split("@")[0]')
+git config --global user.email $GITMAIL
+git config --global user.name  $GITUSER
+
 # Start zsh
 clear
 zsh
