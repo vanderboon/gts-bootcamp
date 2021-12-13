@@ -23,8 +23,10 @@ unzip terraform_1.1.0_linux_amd64.zip
 rm terraform_1.1.0_linux_amd64.zip
 mv terraform ~/bin && chmod 0755 ~/bin/terraform 
 
-# Copy standard zsh & powerline configs
-cp ~/gts-bootcamp/shell_setup/.zshrc ~/.zshrc
+# Copy standard zsh & starship configs
+cp $HOME/gts-bootcamp/shell_setup/.zshrc $HOME/.zshrc
+mkdir $HOME/.config
+cp $HOME/gts-bootcamp/shell_setup/starship.toml $HOME/.config/starship.toml
 
 # Start zsh
 zsh

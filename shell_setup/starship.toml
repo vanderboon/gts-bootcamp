@@ -1,0 +1,8 @@
+[aws]
+format = "on aws [$region]($style) "
+style = "yellow"
+
+[git_branch]
+symbol = "🌱 "
+truncation_length = 4
+truncation_symbol = ""
